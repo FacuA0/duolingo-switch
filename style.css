@@ -1,0 +1,56 @@
+body {
+    background-color: #CAE7A3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#buho {
+    fill: #2EC100;
+    transition: fill 0.1s ease-in-out;
+}
+
+svg #fondo {
+    fill: #23283C;
+    transition: fill 0.1s ease-in-out;
+}
+
+svg:hover #fondo {
+    fill: #303957;
+    transition: fill 0.1s ease-in-out;
+}
+
+svg:hover #buho {
+    fill: #0C0;
+    transition: fill 0.1s ease-in-out;
+}
+
+svg:active #buho {
+    fill: #0F0;
+    transition: fill 0.1s ease-in-out;
+}
+
+#ojo-izq-bolsa {
+    transform: translate(62px, 214px) rotate(104deg);
+    transition: all 0.1s ease-in-out;
+}
+
+svg:hover #ojo-izq-bolsa {
+    transform: translate(62px, 204px) rotate(106deg);
+    transition: all 0.1s ease-in-out;
+}
+
+#ojo-der-bolsa {
+    transform: translate(226px, 214px) rotate(-104deg);
+    transition: all 0.1s ease-in-out;
+}
+
+svg:hover #ojo-der-bolsa {
+    transform: translate(226px, 204px) rotate(-106deg);
+    transition: all 0.1s ease-in-out;
+}
+
+@keyframes cerrar-ojo-der {
+    0% {
+    }
+    100% {
+    }
+}

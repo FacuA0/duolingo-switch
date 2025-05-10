@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Duolingo</title>
+</head>
+<body>
+    <h1>Switch de Duolingo</h1>
+    <p><a href="https://youtube.com/shorts/2Yu-Lst9dbU">Video de YouTube relevante</a></p>
+
+    <svg viewBox="0 0 800 300" width="800px" height="300px">
+        <!-- Fondo -->
+        <rect id="fondo" x="0" y="0" width="800" height="300" rx="150" fill="#23283C"/>
+
+        <!-- Búho -->
+        <g transform="translate(510,10)">
+            <rect id="buho" x="0" y="0" width="280" height="280" rx="150" fill="#2EC100"/>
+            <path d="M 38,150 v -30 q 0,-45,40,-50 l 5,-16 5,6 1,-12 q 1,-6,5,-3 l 36,45 q 12,8,24,0 l 36,-45 q 4,-3,5,3 l 1,12 5,-6 5,16 q 40,5,40,50 v 30 q 0,50,-50,50 -24,0,-54,-30 -30,30,-54,30 -50,0,-50,-50 z" fill="#48DC00"/>
+    
+            <!-- Ojo izquierdo-->
+            <rect x="47" y="78" width="70" height="112" rx="35" fill="#FFFFFF"/>
+            <rect x="72" y="98" width="34" height="64" rx="17" fill="#252A37"/>
+            <circle cx="77" cy="115" r="14" fill="#FFFFFF"/>
+            
+            <clipPath id="clip-ojo-izq">
+                <rect x="46" y="77" width="72" height="114" rx="36"/>
+            </clipPath>
+    
+            <g clip-path="url(#clip-ojo-izq)">
+                <rect id="ojo-izq-bolsa" x="-35" y="-76" width="70" height="152" rx="25" fill="#48DC00" transform="translate(62, 210) rotate(106)"/>
+            </g>
+            
+            
+            <!-- Ojo derecho-->
+            <rect x="168" y="78" width="70" height="112" rx="35" fill="#FFFFFF"/>
+            <rect x="193" y="98" width="34" height="64" rx="17" fill="#252A37"/>
+            <circle cx="198" cy="115" r="14" fill="#FFFFFF"/>
+            
+            <clipPath id="clip-ojo-der">
+                <rect x="167" y="77" width="72" height="114" rx="36"/>
+            </clipPath>
+    
+            <g clip-path="url(#clip-ojo-der)">
+                <rect id="ojo-der-bolsa" x="-35" y="-76" width="70" height="152" rx="25" fill="#48DC00" transform="translate(226, 210) rotate(-106)"/>
+            </g>
+    
+            <!-- Pico -->
+            <circle cx="142" cy="180" r="22" fill="#FE8400"/>
+            <path d="M 116,184 q 2,-26,26,-26 24,0,26,26 l -26,5 z" fill="#FFBB00"/>
+        </g>
+    </svg>
+</body>
+</html>

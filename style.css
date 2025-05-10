@@ -58,6 +58,18 @@ svg:hover #ojo-der-bolsa {
     transition: all 0.2s ease-in-out;
 }
 
+#base-pico {
+    transform: translate(0px, 0px);
+    transition: all 0.2s ease-in-out;
+}
+
+svg:hover #base-pico {
+    transform: translate(0px, -2px);
+    rx: 20px;
+    ry: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
 @keyframes cerrar-ojo-der {
     0% {
     }

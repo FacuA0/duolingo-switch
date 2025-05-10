@@ -10,7 +10,7 @@
     <h1>Switch de Duolingo</h1>
     <p><a href="https://youtube.com/shorts/2Yu-Lst9dbU">Video de YouTube relevante</a></p>
 
-    <svg viewBox="0 0 800 300" width="800px" height="300px">
+    <svg viewBox="0 0 800 300" width="700px" height="300px">
         <!-- Fondo -->
         <rect id="fondo" x="0" y="0" width="800" height="300" rx="150" fill="#23283C"/>
 
@@ -44,6 +44,15 @@
             <path d="M 28.9,129.9 A 85 85 0 0 1 151.7 37.4" stroke="#C3CDE088" stroke-width="36" stroke-linecap="round" fill="#0000"></path>
         </g>
 
+        <!-- Nubes -->
+        <defs>
+            <path id="nube" d="M -75,18 q 3,-26,29,-21 6,1,10,-4, 9,-20,30,-14 3,1,5,-1 13,-11,28,-2 2,1,4,0.5 24,-3,27,20.5 21,-3,26,22 0.2,2,-3,2 h -153 q -3.2,0,-3,-3 z" fill="#FFF"/>
+        </defs>
+
+        <use transform="translate(276, 98) scale(1.4)" href="#nube" fill="#FFF"/>
+        <use transform="translate(518, 240) scale(-1.5,1.5)" href="#nube" fill="#FFF"/>
+        <use transform="translate(117, 210) scale(-1.1,1.1)" href="#nube" fill="#FFF" opacity="0.4"/>
+        
         <!-- Búho -->
         <g transform="translate(510, 10)">
             <rect id="buho" x="0" y="0" width="280" height="280" rx="150" fill="#2EC100"/>

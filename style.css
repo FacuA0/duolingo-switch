@@ -29,32 +29,32 @@ svg:active #buho {
 }
 
 #mascara {
-    transform: translate(38px, 0px);
+    transform: translate(38px, 45px);
     transition: transform 0.2s ease-in-out;
 }
 
 svg:hover #mascara {
-    transform: translate(45px, -4px) rotate(3deg);
+    transform: translate(43px, 40px) rotate(3deg);
     transition: transform 0.2s ease-in-out;
 }
 
 #ojo-izq-bolsa {
-    transform: translate(24px, 224px) rotate(104deg);
+    transform: translate(24px, 179px) rotate(104deg);
     transition: all 0.2s ease-in-out;
 }
 
 svg:hover #ojo-izq-bolsa {
-    transform: translate(24px, 193px) rotate(100deg);
+    transform: translate(24px, 148px) rotate(100deg);
     transition: all 0.2s ease-in-out;
 }
 
 #ojo-der-bolsa {
-    transform: translate(188px, 224px) rotate(-104deg);
+    transform: translate(188px, 179px) rotate(-104deg);
     transition: all 0.2s ease-in-out;
 }
 
 svg:hover #ojo-der-bolsa {
-    transform: translate(188px, 195px) rotate(-104deg);
+    transform: translate(188px, 150px) rotate(-104deg);
     transition: all 0.2s ease-in-out;
 }
 

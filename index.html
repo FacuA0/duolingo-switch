@@ -14,6 +14,36 @@
         <!-- Fondo -->
         <rect id="fondo" x="0" y="0" width="800" height="300" rx="150" fill="#23283C"/>
 
+        <!-- Luna -->
+        <g transform="translate(38,38)">
+            <circle cx="112" cy="112" r="112" fill="#DDD"/>
+            <path d="M 5,145.5 A 112 112 0 0 1 178 21.6" stroke="#DBDCCA" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
+            <path d="M 14,166.2 A 112 112 0 0 0 220 82" stroke="#FEFEFF" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
+            
+            <clipPath id="crater-1">
+                <circle cx="162" cy="72" r="32.1"/>
+            </clipPath>
+            
+            <circle cx="162" cy="72" r="32" fill="#AEB9D1"/>
+            <circle cx="168" cy="78" r="32" fill="#BCCBD8" clip-path="url(#crater-1)"/>
+            
+            <clipPath id="crater-2">
+                <circle cx="62" cy="102" r="28.1"/>
+            </clipPath>
+            
+            <circle cx="62" cy="102" r="28" fill="#AEB9D1"/>
+            <circle cx="68" cy="108" r="28" fill="#BCCBD8" clip-path="url(#crater-2)"/>
+            
+            <clipPath id="crater-3">
+                <circle cx="110" cy="160" r="36.1"/>
+            </clipPath>
+            
+            <circle cx="110" cy="160" r="36" fill="#AEB9D1"/>
+            <circle cx="116" cy="166" r="36" fill="#BCCBD8" clip-path="url(#crater-3)"/>
+
+            <path d="M 28.9,129.9 A 85 85 0 0 1 151.7 37.4" stroke="#C3CDE088" stroke-width="36" stroke-linecap="round" fill="#0000"></path>
+        </g>
+
         <!-- Búho -->
         <g transform="translate(510, 10)">
             <rect id="buho" x="0" y="0" width="280" height="280" rx="150" fill="#2EC100"/>

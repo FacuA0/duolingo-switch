@@ -3,49 +3,59 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#buho {
-    fill: #2EC100;
-    transition: fill 0.1s ease-in-out;
-}
-
-svg #fondo {
+#fondo {
     fill: #23283C;
-    transition: fill 0.1s ease-in-out;
+    transition: fill 0.2s ease-in-out;
 }
 
 svg:hover #fondo {
     fill: #303957;
-    transition: fill 0.1s ease-in-out;
+    transition: fill 0.2s ease-in-out;
+}
+
+#buho {
+    fill: #2EC100;
+    transition: fill 0.2s ease-in-out;
 }
 
 svg:hover #buho {
     fill: #0C0;
-    transition: fill 0.1s ease-in-out;
+    transition: fill 0.2s ease-in-out;
 }
 
 svg:active #buho {
     fill: #0F0;
-    transition: fill 0.1s ease-in-out;
+    transition: fill 0.2s ease-in-out;
+}
+
+#mascara {
+    transform: translate(38px, 0px);
+    transition: transform 0.2s ease-in-out;
+}
+
+svg:hover #mascara {
+    transform: translate(45px, -4px) rotate(3deg);
+    transition: transform 0.2s ease-in-out;
 }
 
 #ojo-izq-bolsa {
-    transform: translate(24px, 214px) rotate(104deg);
-    transition: all 0.1s ease-in-out;
+    transform: translate(24px, 224px) rotate(104deg);
+    transition: all 0.2s ease-in-out;
 }
 
 svg:hover #ojo-izq-bolsa {
-    transform: translate(24px, 204px) rotate(106deg);
-    transition: all 0.1s ease-in-out;
+    transform: translate(24px, 193px) rotate(100deg);
+    transition: all 0.2s ease-in-out;
 }
 
 #ojo-der-bolsa {
-    transform: translate(188px, 214px) rotate(-104deg);
-    transition: all 0.1s ease-in-out;
+    transform: translate(188px, 224px) rotate(-104deg);
+    transition: all 0.2s ease-in-out;
 }
 
 svg:hover #ojo-der-bolsa {
-    transform: translate(188px, 204px) rotate(-106deg);
-    transition: all 0.1s ease-in-out;
+    transform: translate(188px, 195px) rotate(-104deg);
+    transition: all 0.2s ease-in-out;
 }
 
 @keyframes cerrar-ojo-der {

@@ -12,9 +12,9 @@
         <h1>Switch de Duolingo</h1>
         <p><a href="https://youtube.com/shorts/2Yu-Lst9dbU">Video de YouTube relevante</a></p>
 
-        <svg viewBox="0 0 800 300" width="740px" height="300px" class="dia">
+        <svg viewBox="0 0 820 300" width="760px" height="300px" class="">
             <!-- Fondo -->
-            <rect id="fondo" x="0" y="0" width="800" height="300" rx="150" fill="#23283C"/>
+            <rect id="fondo" x="0" y="0" width="820" height="300" rx="150" fill="#23283C"/>
 
             <!-- Luna/sol -->
             <g id="g-astro" transform="translate(38,38)">
@@ -54,14 +54,20 @@
                 <path id="nube" d="M -75,18 q 3,-26,29,-21 6,1,10,-4, 9,-20,30,-14 3,1,5,-1 13,-11,28,-2 2,1,4,0.5 24,-3,27,20.5 21,-3,26,22 0.2,2,-3,2 h -153 q -3.2,0,-3,-3 z" fill="#FFF"/>
             </defs>
 
-            <g id="nubes">
-                <use transform="translate(276, 98) scale(1.4)" href="#nube" fill="#FFF"/>
-                <use transform="translate(518, 240) scale(-1.5,1.5)" href="#nube" fill="#FFF"/>
-                <use transform="translate(117, 210) scale(-1.1,1.1)" href="#nube" fill="#FFF" opacity="0.4"/>
+            <clipPath id="clip-nubes">
+                <rect x="0" y="0" width="820" height="300" rx="149.9"/>
+            </clipPath>
+
+            <g clip-path="url(#clip-nubes)">
+                <g id="nubes">
+                    <use transform="translate(276, 98) scale(1.4)" href="#nube" fill="#FFF"/>
+                    <use transform="translate(548, 240) scale(-1.5,1.5)" href="#nube" fill="#FFF"/>
+                    <use transform="translate(117, 210) scale(-1.1,1.1)" href="#nube" fill="#FFF" opacity="0.4"/>
+                </g>
             </g>
             
             <!-- Búho -->
-            <g id="g-buho" transform="translate(510, 10)">
+            <g id="g-buho" transform="translate(530, 10)">
                 <rect id="buho" x="0" y="0" width="280" height="280" rx="140" fill="#2EC100"/>
 
                 <!-- Cara -->

@@ -2,7 +2,7 @@ body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --anim-duration: 5s;
+    --anim-duration: 2.4s;
 }
 
 
@@ -71,6 +71,10 @@ svg.dia:hover #cara {
 
 
 /* Ojo izquierdo */
+#ojo-izq-pup, #ojo-izq-ref {
+    animation-duration: var(--anim-duration);
+}
+
 #ojo-izq-bolsa {
     transform: translate(24px, 179px) rotate(104deg);
     transition: all 0.2s ease-in-out;
@@ -100,8 +104,12 @@ svg.dia:hover #ojo-izq-bolsa {
 
 
 /* Ojo derecho */
+#ojo-der-pup, #ojo-der-ref {
+    animation-duration: var(--anim-duration);
+}
+
 svg.dia #ojo-der-pup, svg.dia #ojo-der-ref {
-    transform: translate(0px, 3px);
+    transform: translate(-6px, 3px);
 }
 
 #ojo-der-bolsa {
@@ -192,10 +200,10 @@ svg.dia:hover #base-pico {
     0% {
         transform: translate(530px, 10px);
     }
-    50% {
-        transform: translate(0px, 0px);
+    33% {
+        transform: translate(-30px, -260px);
     }
-    100% {
+    67% {
         transform: translate(10px, 10px);
     }
 }
@@ -208,12 +216,12 @@ svg.dia:hover #base-pico {
         height: 280px;
         rx: 140px;
     }
-    50% {
-        width: 820px;
-        height: 300px;
-        rx: 150px;
+    33% {
+        width: 860px;
+        height: 860px;
+        rx: 430px;
     }
-    100% {
+    67% {
         width: 280px;
         height: 280px;
         rx: 140px;
@@ -226,10 +234,10 @@ svg.dia:hover #base-pico {
     0% {
         transform: translate(38px, 45px);
     }
-    50% {
-        transform: translate(240px, 6px) scale(1.8);
+    33% {
+        transform: translate(240px, 266px) scale(1.8);
     }
-    100% {
+    67% {
         transform: translate(38px, 45px);
     }
 }
@@ -239,35 +247,38 @@ svg.dia:hover #base-pico {
 @keyframes dia-mascara {}
 
 @keyframes noche-mascara {}
-/*
+
 @keyframes dia-ojo-izq-pup {
     0% {
-
+        transform: translate(0px, 0px);
     }
-    50% {
-
+    33% {
+        transform: translate(-6px, 28px);
     }
-    100% {
-        
+    67% {
+        transform: translate(-6px, 0px);
     }
 }
 @keyframes dia-ojo-izq-ref {
     0% {
-
+        transform: translate(0px, 0px);
     }
-    50% {
-
+    33% {
+        transform: translate(-12px, 18px);
     }
-    100% {
-        
+    67% {
+        transform: translate(-6px, 0px);
     }
-}*/
+}
 @keyframes dia-ojo-izq-parpado {
     0% {
         transform: translate(38px, -4px) rotate(90deg);
     }
-    50% {
-        transform: translate(38px, 26px) rotate(90deg);
+    33% {
+        transform: translate(38px, 38px) rotate(104deg);
+    }
+    67% {
+        transform: translate(38px, -4px) rotate(90deg);
     }
     100% {
         transform: translate(38px, 58px) rotate(90deg);
@@ -277,19 +288,49 @@ svg.dia:hover #base-pico {
     0% {
         transform: translate(24px, 179px) rotate(104deg);
     }
-    50% {
-        transform: translate(24px, 153px) rotate(95deg);
+    33% {
+        transform: translate(24px, 140px) rotate(104deg);
+    }
+    67% {
+        transform: translate(24px, 179px) rotate(104deg);
     }
     100% {
         transform: translate(28px, 127px) rotate(90deg);
     }
 }
+
+@keyframes dia-ojo-der-pup {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-6px, 28px);
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
+@keyframes dia-ojo-der-ref {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-10px, 20px);
+        r: 8px;
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
 @keyframes dia-ojo-der-parpado {
     0% {
-        transform: translate(158px, -4px) rotate(90deg);
+        transform: translate(170px, -4px) rotate(90deg);
     }
-    50% {
-        transform: translate(158px, 26px) rotate(90deg);
+    33% {
+        transform: translate(170px, 38px) rotate(76deg);
+    }
+    67% {
+        transform: translate(170px, -4px) rotate(90deg);
     }
     100% {
         transform: translate(158px, 58px) rotate(90deg);
@@ -299,8 +340,11 @@ svg.dia:hover #base-pico {
     0% {
         transform: translate(188px, 179px) rotate(-104deg);
     }
-    50% {
-        transform: translate(183px, 153px) rotate(-95deg);
+    33% {
+        transform: translate(183px, 140px) rotate(-104deg);
+    }
+    67% {
+        transform: translate(188px, 179px) rotate(-104deg);
     }
     100% {
         transform: translate(178px, 127px) rotate(-90deg);

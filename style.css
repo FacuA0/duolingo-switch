@@ -2,9 +2,11 @@ body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --anim-duration: 2s;
+    --anim-duration: 5s;
 }
 
+
+/* Fondo */
 #fondo {
     fill: #23283C;
     transition: fill 0.2s ease-in-out;
@@ -22,6 +24,8 @@ svg.dia:hover #fondo {
     fill: #0B8DF6;
 }
 
+
+/* Grupo búho y fondo búho */
 #g-buho {
     transform: translate(530px, 10px);
     animation-duration: var(--anim-duration);
@@ -46,6 +50,7 @@ svg:active #buho {
 }
 
 
+/* Cara */
 #cara {
     transform: translate(38px, 45px);
     transition: transform 0.2s ease-in-out;
@@ -69,6 +74,7 @@ svg.dia:hover #cara {
 #ojo-izq-bolsa {
     transform: translate(24px, 179px) rotate(104deg);
     transition: all 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
 svg:hover #ojo-izq-bolsa {
@@ -81,6 +87,11 @@ svg:hover #ojo-izq-bolsa {
 
 svg.dia:hover #ojo-izq-bolsa {
     transform: translate(28px, 127px) rotate(90deg);
+}
+
+
+#ojo-izq-parpado {
+    animation-duration: var(--anim-duration);
 }
 
 .dia #ojo-izq-parpado {
@@ -96,6 +107,7 @@ svg.dia #ojo-der-pup, svg.dia #ojo-der-ref {
 #ojo-der-bolsa {
     transform: translate(188px, 179px) rotate(-104deg);
     transition: all 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
 svg:hover #ojo-der-bolsa {
@@ -106,14 +118,15 @@ svg:hover #ojo-der-bolsa {
     transform: translate(178px, 127px) rotate(-90deg);
 }
 
-#ojo-der-parpado {
-    transition: all 0.2s ease-in-out;
-}
-
 svg.dia:hover #ojo-der-bolsa {
     transform: translate(178px, 127px) rotate(-90deg);
 }
 
+
+#ojo-der-parpado {
+    transition: all 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
+}
 
 .dia #ojo-der-parpado {
     transform: translate(158px, 58px) rotate(90deg);
@@ -177,7 +190,7 @@ svg.dia:hover #base-pico {
 
 @keyframes dia-g-buho {
     0% {
-        transform: translate(510px, 10px);
+        transform: translate(530px, 10px);
     }
     50% {
         transform: translate(0px, 0px);
@@ -214,7 +227,7 @@ svg.dia:hover #base-pico {
         transform: translate(38px, 45px);
     }
     50% {
-        transform: translate(310px, 60px);
+        transform: translate(240px, 6px) scale(1.8);
     }
     100% {
         transform: translate(38px, 45px);
@@ -222,11 +235,77 @@ svg.dia:hover #base-pico {
 }
 
 @keyframes noche-cara {}
+
 @keyframes dia-mascara {}
+
 @keyframes noche-mascara {}
-@keyframes dia-ojo-izq {}
-@keyframes noche-ojo-izq {}
-@keyframes dia-ojo-der {}
-@keyframes noche-ojo-der {}
+/*
+@keyframes dia-ojo-izq-pup {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+        
+    }
+}
+@keyframes dia-ojo-izq-ref {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+        
+    }
+}*/
+@keyframes dia-ojo-izq-parpado {
+    0% {
+        transform: translate(38px, -4px) rotate(90deg);
+    }
+    50% {
+        transform: translate(38px, 26px) rotate(90deg);
+    }
+    100% {
+        transform: translate(38px, 58px) rotate(90deg);
+    }
+}
+@keyframes dia-ojo-izq-bolsa {
+    0% {
+        transform: translate(24px, 179px) rotate(104deg);
+    }
+    50% {
+        transform: translate(24px, 153px) rotate(95deg);
+    }
+    100% {
+        transform: translate(28px, 127px) rotate(90deg);
+    }
+}
+@keyframes dia-ojo-der-parpado {
+    0% {
+        transform: translate(158px, -4px) rotate(90deg);
+    }
+    50% {
+        transform: translate(158px, 26px) rotate(90deg);
+    }
+    100% {
+        transform: translate(158px, 58px) rotate(90deg);
+    }
+}
+@keyframes dia-ojo-der-bolsa {
+    0% {
+        transform: translate(188px, 179px) rotate(-104deg);
+    }
+    50% {
+        transform: translate(183px, 153px) rotate(-95deg);
+    }
+    100% {
+        transform: translate(178px, 127px) rotate(-90deg);
+    }
+}
+
 @keyframes dia-base-pico {}
 @keyframes noche-base-pico {}

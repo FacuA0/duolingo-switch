@@ -56,7 +56,16 @@ svg:hover #cara {
     transform: translate(43px, 40px) rotate(3deg);
 }
 
+.dia #cara {
+    transform: translate(38px, 65px);
+}
 
+svg.dia:hover #cara {
+    transform: translate(38px, 65px);
+}
+
+
+/* Ojo izquierdo */
 #ojo-izq-bolsa {
     transform: translate(24px, 179px) rotate(104deg);
     transition: all 0.2s ease-in-out;
@@ -66,6 +75,23 @@ svg:hover #ojo-izq-bolsa {
     transform: translate(24px, 148px) rotate(100deg);
 }
 
+.dia #ojo-izq-bolsa {
+    transform: translate(28px, 127px) rotate(90deg);
+}
+
+svg.dia:hover #ojo-izq-bolsa {
+    transform: translate(28px, 127px) rotate(90deg);
+}
+
+.dia #ojo-izq-parpado {
+    transform: translate(38px, 58px) rotate(90deg);
+}
+
+
+/* Ojo derecho */
+svg.dia #ojo-der-pup, svg.dia #ojo-der-ref {
+    transform: translate(0px, 3px);
+}
 
 #ojo-der-bolsa {
     transform: translate(188px, 179px) rotate(-104deg);
@@ -76,7 +102,29 @@ svg:hover #ojo-der-bolsa {
     transform: translate(188px, 150px) rotate(-104deg);
 }
 
+.dia #ojo-der-bolsa {
+    transform: translate(178px, 127px) rotate(-90deg);
+}
 
+#ojo-der-parpado {
+    transition: all 0.2s ease-in-out;
+}
+
+svg.dia:hover #ojo-der-bolsa {
+    transform: translate(178px, 127px) rotate(-90deg);
+}
+
+
+.dia #ojo-der-parpado {
+    transform: translate(158px, 58px) rotate(90deg);
+}
+
+svg.dia:hover #ojo-der-parpado {
+    transform: translate(158px, 48px) rotate(90deg);
+}
+
+
+/* Pico */
 #base-pico {
     transform: translate(0px, 0px);
     transition: all 0.2s ease-in-out;
@@ -89,6 +137,16 @@ svg:hover #base-pico {
     ry: 18px;
 }
 
+svg.dia:hover #base-pico {
+    transform: translate(0px, 0px);
+
+    /* Sincronizado con atributos */
+    rx: 22px;
+    ry: 20px;
+}
+
+
+/* Sol-luna y nubes */
 .dia #g-astro {
     transform: translate(558px, 38px);
 }
@@ -115,7 +173,7 @@ svg:hover #base-pico {
     transform: translate(190px, 0px);
 }
 
-/*** Animations ***/
+/*** Animaciones ***/
 
 @keyframes dia-g-buho {
     0% {

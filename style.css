@@ -19,6 +19,10 @@ svg:hover #fondo {
     animation-duration: var(--anim-duration);
 }
 
+.dia #g-buho {
+    transform: translate(10px, 10px);
+}
+
 #buho {
     fill: #2EC100;
     transition: fill 0.2s ease-in-out;
@@ -27,12 +31,10 @@ svg:hover #fondo {
 
 svg:hover #buho {
     fill: #0C0;
-    transition: fill 0.2s ease-in-out;
 }
 
 svg:active #buho {
     fill: #0F0;
-    transition: fill 0.2s ease-in-out;
 }
 
 
@@ -78,6 +80,20 @@ svg:hover #base-pico {
     rx: 20px;
     ry: 18px;
 }
+
+.dia #g-astro {
+    transform: translate(538px, 38px);
+}
+
+.dia #astro {
+    fill: #F1A952;
+}
+
+.dia #astro-crateres {
+    opacity: 0;
+}
+
+/*** Animations ***/
 
 @keyframes dia-g-buho {
     0% {

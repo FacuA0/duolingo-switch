@@ -12,38 +12,41 @@
         <h1>Switch de Duolingo</h1>
         <p><a href="https://youtube.com/shorts/2Yu-Lst9dbU">Video de YouTube relevante</a></p>
 
-        <svg viewBox="0 0 800 300" width="740px" height="300px">
+        <svg viewBox="0 0 800 300" width="740px" height="300px" class="dia">
             <!-- Fondo -->
             <rect id="fondo" x="0" y="0" width="800" height="300" rx="150" fill="#23283C"/>
 
-            <!-- Luna -->
-            <g transform="translate(38,38)">
-                <circle cx="112" cy="112" r="112" fill="#DDD"/>
-                <path d="M 5,145.5 A 112 112 0 0 1 178 21.6" stroke="#DBDCCA" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
-                <path d="M 14,166.2 A 112 112 0 0 0 220 82" stroke="#FEFEFF" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
+            <!-- Luna/sol -->
+            <g id="g-astro" transform="translate(38,38)">
+                <circle id="astro" cx="112" cy="112" r="112" fill="#DDD"/>
+                <path id="astro-sup" d="M 5,145.5 A 112 112 0 0 1 178 21.6" stroke="#DBDCCA" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
+                <path id="astro-inf" d="M 14,166.2 A 112 112 0 0 0 220 82" stroke="#FEFEFF" stroke-width="10" stroke-linecap="round" fill="#0000"></path>
                 
-                <clipPath id="crater-1">
-                    <circle cx="162" cy="72" r="32.1"/>
-                </clipPath>
-                
-                <circle cx="162" cy="72" r="32" fill="#AEB9D1"/>
-                <circle cx="168" cy="78" r="32" fill="#BCCBD8" clip-path="url(#crater-1)"/>
-                
-                <clipPath id="crater-2">
-                    <circle cx="62" cy="102" r="28.1"/>
-                </clipPath>
-                
-                <circle cx="62" cy="102" r="28" fill="#AEB9D1"/>
-                <circle cx="68" cy="108" r="28" fill="#BCCBD8" clip-path="url(#crater-2)"/>
-                
-                <clipPath id="crater-3">
-                    <circle cx="110" cy="160" r="36.1"/>
-                </clipPath>
-                
-                <circle cx="110" cy="160" r="36" fill="#AEB9D1"/>
-                <circle cx="116" cy="166" r="36" fill="#BCCBD8" clip-path="url(#crater-3)"/>
+                <!-- Cráteres -->
+                <g id="astro-crateres">
+                    <clipPath id="crater-1">
+                        <circle cx="162" cy="72" r="32.1"/>
+                    </clipPath>
+                    
+                    <circle cx="162" cy="72" r="32" fill="#AEB9D1"/>
+                    <circle cx="168" cy="78" r="32" fill="#BCCBD8" clip-path="url(#crater-1)"/>
+                    
+                    <clipPath id="crater-2">
+                        <circle cx="62" cy="102" r="28.1"/>
+                    </clipPath>
+                    
+                    <circle cx="62" cy="102" r="28" fill="#AEB9D1"/>
+                    <circle cx="68" cy="108" r="28" fill="#BCCBD8" clip-path="url(#crater-2)"/>
+                    
+                    <clipPath id="crater-3">
+                        <circle cx="110" cy="160" r="36.1"/>
+                    </clipPath>
+                    
+                    <circle cx="110" cy="160" r="36" fill="#AEB9D1"/>
+                    <circle cx="116" cy="166" r="36" fill="#BCCBD8" clip-path="url(#crater-3)"/>
+                </g>
 
-                <path d="M 28.9,129.9 A 85 85 0 0 1 151.7 37.4" stroke="#C3CDE088" stroke-width="36" stroke-linecap="round" fill="#0000"></path>
+                <path id="astro-sombra" d="M 28.9,129.9 A 85 85 0 0 1 151.7 37.4" stroke="#C3CDE088" stroke-width="36" stroke-linecap="round" fill="#0000"></path>
             </g>
 
             <!-- Nubes -->
@@ -51,9 +54,11 @@
                 <path id="nube" d="M -75,18 q 3,-26,29,-21 6,1,10,-4, 9,-20,30,-14 3,1,5,-1 13,-11,28,-2 2,1,4,0.5 24,-3,27,20.5 21,-3,26,22 0.2,2,-3,2 h -153 q -3.2,0,-3,-3 z" fill="#FFF"/>
             </defs>
 
-            <use transform="translate(276, 98) scale(1.4)" href="#nube" fill="#FFF"/>
-            <use transform="translate(518, 240) scale(-1.5,1.5)" href="#nube" fill="#FFF"/>
-            <use transform="translate(117, 210) scale(-1.1,1.1)" href="#nube" fill="#FFF" opacity="0.4"/>
+            <g id="nubes">
+                <use transform="translate(276, 98) scale(1.4)" href="#nube" fill="#FFF"/>
+                <use transform="translate(518, 240) scale(-1.5,1.5)" href="#nube" fill="#FFF"/>
+                <use transform="translate(117, 210) scale(-1.1,1.1)" href="#nube" fill="#FFF" opacity="0.4"/>
+            </g>
             
             <!-- Búho -->
             <g id="g-buho" transform="translate(510, 10)">
@@ -84,7 +89,6 @@
                             <rect id="ojo-izq-bolsa" transform="translate(24, 179) rotate(104)" x="-35" y="-76" width="70" height="152" rx="25" fill="#48DC00"/>
                         </g>
                     </g>
-                    
                     
                     <!-- Ojo derecho-->
                     <g id="ojo-der">

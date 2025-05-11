@@ -14,6 +14,8 @@ window.onload = function() {
     control.addEventListener("click", () => {
         activado = !activado;
 
+        control.classList.toggle("dia");
+
         agregarAnimaciones(gBuho, "g-buho");
         agregarAnimaciones(buho, "buho");
         agregarAnimaciones(cara, "cara");

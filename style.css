@@ -14,8 +14,16 @@ svg:hover #fondo {
     fill: #303957;
 }
 
+.dia #fondo {
+    fill: #0B8DF6;
+}
+
+svg.dia:hover #fondo {
+    fill: #0B8DF6;
+}
+
 #g-buho {
-    transform: translate(510px, 10px);
+    transform: translate(530px, 10px);
     animation-duration: var(--anim-duration);
 }
 
@@ -82,7 +90,7 @@ svg:hover #base-pico {
 }
 
 .dia #g-astro {
-    transform: translate(538px, 38px);
+    transform: translate(558px, 38px);
 }
 
 .dia #astro {
@@ -91,6 +99,20 @@ svg:hover #base-pico {
 
 .dia #astro-crateres {
     opacity: 0;
+}
+
+.dia #astro-sup {
+    stroke: #FAFF92;
+}
+.dia #astro-inf {
+    stroke: #CD802B;
+}
+.dia #astro-sombra {
+    stroke: #F7BE79;
+}
+
+.dia #nubes {
+    transform: translate(190px, 0px);
 }
 
 /*** Animations ***/
@@ -116,7 +138,7 @@ svg:hover #base-pico {
         rx: 140px;
     }
     50% {
-        width: 800px;
+        width: 820px;
         height: 300px;
         rx: 150px;
     }
@@ -134,7 +156,7 @@ svg:hover #base-pico {
         transform: translate(38px, 45px);
     }
     50% {
-        transform: translate(300px, 60px);
+        transform: translate(310px, 60px);
     }
     100% {
         transform: translate(38px, 45px);

@@ -1,6 +1,8 @@
 body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --anim-duration: 2s;
 }
 
 #fondo {
@@ -10,12 +12,17 @@ body {
 
 svg:hover #fondo {
     fill: #303957;
-    transition: fill 0.2s ease-in-out;
+}
+
+#g-buho {
+    transform: translate(510px, 10px);
+    animation-duration: var(--anim-duration);
 }
 
 #buho {
     fill: #2EC100;
     transition: fill 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
 svg:hover #buho {
@@ -28,15 +35,17 @@ svg:active #buho {
     transition: fill 0.2s ease-in-out;
 }
 
-#mascara {
+
+#cara {
     transform: translate(38px, 45px);
     transition: transform 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
-svg:hover #mascara {
+svg:hover #cara {
     transform: translate(43px, 40px) rotate(3deg);
-    transition: transform 0.2s ease-in-out;
 }
+
 
 #ojo-izq-bolsa {
     transform: translate(24px, 179px) rotate(104deg);
@@ -45,8 +54,8 @@ svg:hover #mascara {
 
 svg:hover #ojo-izq-bolsa {
     transform: translate(24px, 148px) rotate(100deg);
-    transition: all 0.2s ease-in-out;
 }
+
 
 #ojo-der-bolsa {
     transform: translate(188px, 179px) rotate(-104deg);
@@ -55,24 +64,73 @@ svg:hover #ojo-izq-bolsa {
 
 svg:hover #ojo-der-bolsa {
     transform: translate(188px, 150px) rotate(-104deg);
-    transition: all 0.2s ease-in-out;
 }
+
 
 #base-pico {
     transform: translate(0px, 0px);
     transition: all 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
 svg:hover #base-pico {
     transform: translate(0px, -2px);
     rx: 20px;
     ry: 18px;
-    transition: all 0.2s ease-in-out;
 }
 
-@keyframes cerrar-ojo-der {
+@keyframes dia-g-buho {
     0% {
+        transform: translate(510px, 10px);
+    }
+    50% {
+        transform: translate(0px, 0px);
     }
     100% {
+        transform: translate(10px, 10px);
     }
 }
+
+@keyframes noche-g-buho {}
+
+@keyframes dia-buho {
+    0% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+    50% {
+        width: 800px;
+        height: 300px;
+        rx: 150px;
+    }
+    100% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+}
+
+@keyframes noche-buho {}
+
+@keyframes dia-cara {
+    0% {
+        transform: translate(38px, 45px);
+    }
+    50% {
+        transform: translate(300px, 60px);
+    }
+    100% {
+        transform: translate(38px, 45px);
+    }
+}
+
+@keyframes noche-cara {}
+@keyframes dia-mascara {}
+@keyframes noche-mascara {}
+@keyframes dia-ojo-izq {}
+@keyframes noche-ojo-izq {}
+@keyframes dia-ojo-der {}
+@keyframes noche-ojo-der {}
+@keyframes dia-base-pico {}
+@keyframes noche-base-pico {}

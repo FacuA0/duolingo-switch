@@ -1,0 +1,243 @@
+/*** Animaciones ***/
+
+@keyframes dia-fondo {
+    0% {
+        fill: #23283C;
+    }
+    33% {
+        fill: #FFFFFF;
+    }
+    67% {
+        fill: #0B8DF6;
+    }
+}
+
+@keyframes dia-g-astro {
+    0% {
+        transform: translate(38px, 38px);
+    }
+    33% {
+        transform: translate(38px, 38px);
+    }
+    67% {
+        transform: translate(558px, 38px);
+    }
+}
+
+@keyframes dia-astro {
+    0% {
+        fill: #DDDDDD;
+    }
+    32% {
+        fill: #DDDDDD;
+    }
+    34% {
+        fill: #F1A952;
+    }
+}
+
+@keyframes dia-astro-sup {
+    0% {
+        stroke: #DBDCCA;
+    }
+    32% {
+        stroke: #DBDCCA;
+    }
+    34% {
+        stroke: #FAFF92;
+    }
+}
+
+@keyframes dia-astro-inf {
+    0% {
+        stroke: #FEFEFF;
+    }
+    32% {
+        stroke: #FEFEFF;
+    }
+    34% {
+        stroke: #CD802B;
+    }
+}
+
+@keyframes dia-astro-sombra {
+    0% {
+        stroke: #C3CDE088;
+    }
+    32% {
+        stroke: #C3CDE088;
+    }
+    34% {
+        stroke: #F7BE79;
+    }
+}
+
+@keyframes dia-astro-crateres {
+    0% {
+        opacity: 1;
+    }
+    32% {
+        opacity: 1;
+    }
+    34% {
+        opacity: 0;
+    }
+}
+
+@keyframes dia-nubes {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(0px, 0px);
+    }
+    67% {
+        transform: translate(190px, 0px);
+    }
+}
+
+@keyframes dia-g-buho {
+    0% {
+        transform: translate(530px, 10px);
+    }
+    33% {
+        transform: translate(-30px, -260px);
+    }
+    67% {
+        transform: translate(10px, 10px);
+    }
+}
+
+@keyframes noche-g-buho {}
+
+@keyframes dia-buho {
+    0% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+    33% {
+        width: 860px;
+        height: 860px;
+        rx: 430px;
+    }
+    67% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+}
+
+@keyframes noche-buho {}
+
+@keyframes dia-cara {
+    0% {
+        transform: translate(38px, 45px);
+    }
+    33% {
+        transform: translate(240px, 266px) scale(1.8);
+    }
+    67% {
+        transform: translate(38px, 45px);
+    }
+}
+
+@keyframes noche-cara {}
+
+@keyframes dia-mascara {}
+
+@keyframes noche-mascara {}
+
+@keyframes dia-ojo-izq-pup {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-6px, 28px);
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
+@keyframes dia-ojo-izq-ref {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-12px, 18px);
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
+@keyframes dia-ojo-izq-parpado {
+    0% {
+        transform: translate(38px, -4px) rotate(90deg);
+    }
+    33% {
+        transform: translate(38px, 38px) rotate(104deg);
+    }
+    67% {
+        transform: translate(38px, -4px) rotate(90deg);
+    }
+}
+@keyframes dia-ojo-izq-bolsa {
+    0% {
+        transform: translate(24px, 179px) rotate(104deg);
+    }
+    33% {
+        transform: translate(24px, 140px) rotate(104deg);
+    }
+    67% {
+        transform: translate(24px, 179px) rotate(104deg);
+    }
+}
+
+@keyframes dia-ojo-der-pup {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-6px, 28px);
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
+@keyframes dia-ojo-der-ref {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    33% {
+        transform: translate(-10px, 20px);
+        r: 8px;
+    }
+    67% {
+        transform: translate(-6px, 0px);
+    }
+}
+@keyframes dia-ojo-der-parpado {
+    0% {
+        transform: translate(170px, -4px) rotate(90deg);
+    }
+    33% {
+        transform: translate(170px, 38px) rotate(76deg);
+    }
+    67% {
+        transform: translate(170px, -4px) rotate(90deg);
+    }
+}
+@keyframes dia-ojo-der-bolsa {
+    0% {
+        transform: translate(188px, 179px) rotate(-104deg);
+    }
+    33% {
+        transform: translate(183px, 140px) rotate(-104deg);
+    }
+    67% {
+        transform: translate(188px, 179px) rotate(-104deg);
+    }
+}
+
+@keyframes dia-base-pico {}
+@keyframes noche-base-pico {}

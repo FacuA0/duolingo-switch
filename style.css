@@ -2,7 +2,7 @@ body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --anim-duration: 2.4s;
+    --anim-duration: 2s;
 }
 
 
@@ -10,6 +10,7 @@ body {
 #fondo {
     fill: #23283C;
     transition: fill 0.2s ease-in-out;
+    animation-duration: var(--anim-duration);
 }
 
 svg:hover #fondo {
@@ -172,6 +173,10 @@ svg.dia:hover #base-pico {
 
 
 /* Sol-luna y nubes */
+#g-astro, #astro, #astro-sup, #astro-inf, #astro-crateres, #astro-sombra, #nubes {
+    animation-duration: var(--anim-duration);
+}
+
 .dia #g-astro {
     transform: translate(558px, 38px);
 }
@@ -197,151 +202,3 @@ svg.dia:hover #base-pico {
 .dia #nubes {
     transform: translate(190px, 0px);
 }
-
-/*** Animaciones ***/
-
-@keyframes dia-g-buho {
-    0% {
-        transform: translate(530px, 10px);
-    }
-    33% {
-        transform: translate(-30px, -260px);
-    }
-    67% {
-        transform: translate(10px, 10px);
-    }
-}
-
-@keyframes noche-g-buho {}
-
-@keyframes dia-buho {
-    0% {
-        width: 280px;
-        height: 280px;
-        rx: 140px;
-    }
-    33% {
-        width: 860px;
-        height: 860px;
-        rx: 430px;
-    }
-    67% {
-        width: 280px;
-        height: 280px;
-        rx: 140px;
-    }
-}
-
-@keyframes noche-buho {}
-
-@keyframes dia-cara {
-    0% {
-        transform: translate(38px, 45px);
-    }
-    33% {
-        transform: translate(240px, 266px) scale(1.8);
-    }
-    67% {
-        transform: translate(38px, 45px);
-    }
-}
-
-@keyframes noche-cara {}
-
-@keyframes dia-mascara {}
-
-@keyframes noche-mascara {}
-
-@keyframes dia-ojo-izq-pup {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    33% {
-        transform: translate(-6px, 28px);
-    }
-    67% {
-        transform: translate(-6px, 0px);
-    }
-}
-@keyframes dia-ojo-izq-ref {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    33% {
-        transform: translate(-12px, 18px);
-    }
-    67% {
-        transform: translate(-6px, 0px);
-    }
-}
-@keyframes dia-ojo-izq-parpado {
-    0% {
-        transform: translate(38px, -4px) rotate(90deg);
-    }
-    33% {
-        transform: translate(38px, 38px) rotate(104deg);
-    }
-    67% {
-        transform: translate(38px, -4px) rotate(90deg);
-    }
-}
-@keyframes dia-ojo-izq-bolsa {
-    0% {
-        transform: translate(24px, 179px) rotate(104deg);
-    }
-    33% {
-        transform: translate(24px, 140px) rotate(104deg);
-    }
-    67% {
-        transform: translate(24px, 179px) rotate(104deg);
-    }
-}
-
-@keyframes dia-ojo-der-pup {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    33% {
-        transform: translate(-6px, 28px);
-    }
-    67% {
-        transform: translate(-6px, 0px);
-    }
-}
-@keyframes dia-ojo-der-ref {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    33% {
-        transform: translate(-10px, 20px);
-        r: 8px;
-    }
-    67% {
-        transform: translate(-6px, 0px);
-    }
-}
-@keyframes dia-ojo-der-parpado {
-    0% {
-        transform: translate(170px, -4px) rotate(90deg);
-    }
-    33% {
-        transform: translate(170px, 38px) rotate(76deg);
-    }
-    67% {
-        transform: translate(170px, -4px) rotate(90deg);
-    }
-}
-@keyframes dia-ojo-der-bolsa {
-    0% {
-        transform: translate(188px, 179px) rotate(-104deg);
-    }
-    33% {
-        transform: translate(183px, 140px) rotate(-104deg);
-    }
-    67% {
-        transform: translate(188px, 179px) rotate(-104deg);
-    }
-}
-
-@keyframes dia-base-pico {}
-@keyframes noche-base-pico {}

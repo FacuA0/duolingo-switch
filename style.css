@@ -2,8 +2,8 @@ body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    --anim-duration: 2.2s;
-    --anim-function: cubic-bezier(0.2, -0.2, 0.5, 1.1);
+    --anim-duration: 2.6s;
+    --anim-function: cubic-bezier(0.6, -0.25, 0.2, 1.1);
 }
 
 

@@ -1,5 +1,7 @@
 /*** Animaciones ***/
 
+/*** DIA ***/
+
 @keyframes dia-fondo {
     0% {
         fill: #23283C;
@@ -108,8 +110,6 @@
     }
 }
 
-@keyframes noche-g-buho {}
-
 @keyframes dia-buho {
     0% {
         width: 280px;
@@ -128,8 +128,6 @@
     }
 }
 
-@keyframes noche-buho {}
-
 @keyframes dia-cara {
     0% {
         transform: translate(43px, 40px) rotate(3deg);
@@ -141,12 +139,6 @@
         transform: translate(38px, 50px);
     }
 }
-
-@keyframes noche-cara {}
-
-@keyframes dia-mascara {}
-
-@keyframes noche-mascara {}
 
 @keyframes dia-ojo-izq-pup {
     0% {
@@ -252,5 +244,245 @@
     }
 }
 
-@keyframes dia-base-pico {}
-@keyframes noche-base-pico {}
+/*** NOCHE ***/
+
+@keyframes noche-fondo {
+    0% {
+        fill: #0B8DF6;
+    }
+    30% {
+        fill: #FFFFFF;
+    }
+    60% {
+        fill: #23283C;
+    }
+}
+
+@keyframes noche-g-astro {
+    0% {
+        transform: translate(558px, 38px);
+    }
+    30% {
+        transform: translate(558px, 38px);
+    }
+    60% {
+        transform: translate(38px, 38px);
+    }
+}
+
+@keyframes noche-astro {
+    0% {
+        fill: #F1A952;
+    }
+    30% {
+        fill: #F1A952;
+    }
+    31% {
+        fill: #DDDDDD;
+    }
+}
+
+@keyframes noche-astro-sup {
+    0% {
+        stroke: #FAFF92;
+    }
+    30% {
+        stroke: #FAFF92;
+    }
+    31% {
+        stroke: #DBDCCA;
+    }
+}
+
+@keyframes noche-astro-inf {
+    0% {
+        stroke: #CD802B;
+    }
+    30% {
+        stroke: #CD802B;
+    }
+    31% {
+        stroke: #FEFEFF;
+    }
+}
+
+@keyframes noche-astro-sombra {
+    0% {
+        stroke: #F7BE79;
+    }
+    30% {
+        stroke: #F7BE79;
+    }
+    31% {
+        stroke: #C3CDE088;
+    }
+}
+
+@keyframes noche-astro-crateres {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    31% {
+        opacity: 1;
+    }
+}
+
+@keyframes noche-nubes {
+    0% {
+        transform: translate(190px, 0px);
+    }
+    30% {
+        transform: translate(190px, 0px);
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes noche-g-buho {
+    0% {
+        transform: translate(10px, 10px);
+    }
+    30% {
+        transform: translate(-90px, -260px);
+    }
+    60% {
+        transform: translate(530px, 10px);
+    }
+}
+
+@keyframes noche-buho {
+    0% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+    30% {
+        width: 1000px;
+        height: 1000px;
+        rx: 430px;
+    }
+    60% {
+        width: 280px;
+        height: 280px;
+        rx: 140px;
+    }
+}
+
+@keyframes noche-cara { /* COMPROBAR */
+    0% {
+        transform: translate(38px, 65px);
+    }
+    30% {
+        transform: translate(324px, 266px) scale(1.8);
+    }
+    60% {
+        transform: translate(38px, 45px);
+    }
+}
+
+@keyframes noche-ojo-izq-pup {
+    0% {
+        transform: translate(-6px, 3px);
+    }
+    30% {
+        transform: translate(-6px, 28px);
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes noche-ojo-izq-ref {
+    0% {
+        transform: translate(-6px, 3px);
+    }
+    30% {
+        transform: translate(-12px, 18px);
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes noche-ojo-izq-parpado {
+    0% {
+        transform: translate(38px, 58px) rotate(90deg);
+    }
+    30% {
+        transform: translate(38px, 38px) rotate(104deg);
+    }
+    60% {
+        transform: translate(38px, -6px) rotate(104deg);
+    }
+    80% {
+        transform: translate(38px, 58px) rotate(90deg);
+    }
+}
+@keyframes noche-ojo-izq-bolsa {
+    0% {
+        transform: translate(28px, 127px) rotate(90deg);
+    }
+    30% {
+        transform: translate(24px, 140px) rotate(104deg);
+    }
+    60% {
+        transform: translate(24px, 179px) rotate(104deg);
+    }
+    80% {
+        transform: translate(28px, 127px) rotate(90deg);
+    }
+}
+
+@keyframes noche-ojo-der-pup {
+    0% {
+        transform: translate(-6px, 3px);
+    }
+    30% {
+        transform: translate(-6px, 28px);
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes noche-ojo-der-ref {
+    0% {
+        transform: translate(-6px, 3px);
+    }
+    30% {
+        transform: translate(-10px, 20px);
+        r: 8px;
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes noche-ojo-der-parpado {
+    0% {
+        transform: translate(158px, 48px) rotate(90deg);
+    }
+    30% {
+        transform: translate(170px, 38px) rotate(76deg);
+    }
+    60% {
+        transform: translate(170px, -6px) rotate(76deg);
+    }
+    80% {
+        transform: translate(158px, 58px) rotate(90deg);
+    }
+}
+@keyframes noche-ojo-der-bolsa {
+    0% {
+        transform: translate(178px, 127px) rotate(-90deg);
+    }
+    30% {
+        transform: translate(183px, 140px) rotate(-104deg);
+    }
+    60% {
+        transform: translate(188px, 179px) rotate(-104deg);
+    }
+    80% {
+        transform: translate(178px, 127px) rotate(-90deg);
+    }
+}

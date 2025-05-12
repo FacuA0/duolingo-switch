@@ -75,6 +75,10 @@ svg.dia:hover #cara {
     animation-duration: var(--anim-duration);
 }
 
+svg.dia #ojo-izq-pup, svg.dia #ojo-izq-ref {
+    transform: translate(-6px, 3px);
+}
+
 #ojo-izq-bolsa {
     transform: translate(24px, 179px) rotate(104deg);
     transition: all 0.2s ease-in-out;
@@ -280,9 +284,6 @@ svg.dia:hover #base-pico {
     67% {
         transform: translate(38px, -4px) rotate(90deg);
     }
-    100% {
-        transform: translate(38px, 58px) rotate(90deg);
-    }
 }
 @keyframes dia-ojo-izq-bolsa {
     0% {
@@ -293,9 +294,6 @@ svg.dia:hover #base-pico {
     }
     67% {
         transform: translate(24px, 179px) rotate(104deg);
-    }
-    100% {
-        transform: translate(28px, 127px) rotate(90deg);
     }
 }
 
@@ -332,9 +330,6 @@ svg.dia:hover #base-pico {
     67% {
         transform: translate(170px, -4px) rotate(90deg);
     }
-    100% {
-        transform: translate(158px, 58px) rotate(90deg);
-    }
 }
 @keyframes dia-ojo-der-bolsa {
     0% {
@@ -345,9 +340,6 @@ svg.dia:hover #base-pico {
     }
     67% {
         transform: translate(188px, 179px) rotate(-104deg);
-    }
-    100% {
-        transform: translate(178px, 127px) rotate(-90deg);
     }
 }
 

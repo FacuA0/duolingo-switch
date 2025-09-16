@@ -117,7 +117,7 @@
         rx: 140px;
     }
     30% {
-        y: -360;
+        y: -360px;
         width: 1000px;
         height: 1000px;
         rx: 430px;
@@ -363,7 +363,7 @@
         rx: 140px;
     }
     30% {
-        y: -360;
+        y: -360px;
         width: 1000px;
         height: 1000px;
         rx: 430px;
@@ -460,6 +460,7 @@
     }
     60% {
         transform: translate(0px, 0px);
+        r: 14px;
     }
 }
 @keyframes noche-ojo-der-parpado {

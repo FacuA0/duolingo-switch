@@ -1,13 +1,21 @@
 body {
     background-color: #CAE7A3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     --anim-duration: 1.5s;
     --anim-function: cubic-bezier(0.6, -0.25, 0.2, 1.1);
 }
 
+body * {
+    margin: 8px 0;
+}
+
 svg {
-    margin-top: 64px;
+    margin-top: 96px;
+    max-width: 100%;
 }
 
 
@@ -56,6 +64,12 @@ svg:hover #buho {
 
 svg:active #buho {
     fill: #0F0;
+}
+
+@media (max-width: 520px) {
+    svg:hover #buho {
+        fill: #2EC100;
+    }
 }
 
 
@@ -116,7 +130,7 @@ svg.dia:hover #ojo-izq-bolsa {
 }
 
 .dia #ojo-izq-parpado {
-    transform: translate(38px, 58px) rotate(90deg);
+    transform: translate(38px, 60px) rotate(90deg);
 }
 
 
@@ -157,7 +171,7 @@ svg.dia:hover #ojo-der-bolsa {
 }
 
 .dia #ojo-der-parpado {
-    transform: translate(158px, 58px) rotate(90deg);
+    transform: translate(158px, 60px) rotate(90deg);
 }
 
 svg.dia:hover #ojo-der-parpado {

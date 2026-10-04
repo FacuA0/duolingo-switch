@@ -175,7 +175,7 @@
         transform: translate(38px, -6px) rotate(104deg);
     }
     90% {
-        transform: translate(38px, 58px) rotate(90deg);
+        transform: translate(38px, 60px) rotate(90deg);
     }
 }
 @keyframes dia-ojo-izq-bolsa {
@@ -228,7 +228,7 @@
         transform: translate(170px, -6px) rotate(76deg);
     }
     90% {
-        transform: translate(158px, 58px) rotate(90deg);
+        transform: translate(158px, 60px) rotate(90deg);
     }
 }
 @keyframes dia-ojo-der-bolsa {
@@ -412,7 +412,7 @@
 }
 @keyframes noche-ojo-izq-parpado {
     0% {
-        transform: translate(38px, 58px) rotate(90deg);
+        transform: translate(38px, 60px) rotate(90deg);
     }
     30% {
         transform: translate(38px, 38px) rotate(104deg);
